@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeDurumum"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <ImageView
+            android:id="@+id/ivDurumuKucukResim"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:foreground="@drawable/ovalresim"
+            app:srcCompat="@drawable/blank_profile" />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivDurumuKucukResim"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/ivDurumuKucukResim"
+            android:fontFamily="serif"
+            android:text="My Status"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtguncelleme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivDurumuKucukResim"
+            android:layout_alignStart="@+id/txtname"
+            android:fontFamily="serif"
+            android:textColor="#999"
+            android:text="16h ago"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#76A69C"
+        android:fontFamily="serif"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Son Güncellemeler" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:numColumns="1"
+            android:id="@+id/gridViewDurumlar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

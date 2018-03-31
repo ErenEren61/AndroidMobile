@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:foreground="@drawable/ovalresim"
+        android:id="@+id/ivSohbetlerResim"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/blank_profile" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivSohbetlerResim"
+        android:layout_alignTop="@+id/ivSohbetlerResim"
+        android:layout_toRightOf="@+id/ivSohbetlerResim">
+
+        <TextView
+            android:id="@+id/tvSohbetlerAdSoyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSohbetlerAciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvSohbetlerAdSoyad"
+            android:layout_marginTop="12dp"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rl1"
+        android:id="@+id/relativeLayout">
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewtvSohbetlerZaman3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rl1"
+        android:layout_alignBottom="@+id/rl1"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginStart="12dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>
